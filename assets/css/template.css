@@ -154,6 +154,11 @@ nav .active a, nav a:hover {
 
 #geral aside {
 	flex: 1;
+	width: 310px;
+}
+
+.widget {
+	margin-top: 30px;
 }
 
 .widget-title {
@@ -178,7 +183,6 @@ nav .active a, nav a:hover {
 /*** A Atividade COMEÇA aqui ***/
 .widget-body-1 {	
 	display: flex;
-	justify-content: space-between;
 }
 
 .widget-body-1 div {
@@ -378,4 +382,123 @@ footer .widget-title-text {
 
 em {
 	color: #FFF;
+}
+
+.menu-mobile {
+	display: none;
+	width: 40px;
+	height: 40px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-right: 20px;
+}
+
+.mm-line {
+	height: 2px;
+	background-color: #39aae1;
+}
+
+@media only screen and (min-width: 881px) {
+	.logo {
+		padding-left: 20px;
+	}
+}
+
+@media only screen and (min-width: 761px) and (max-width: 880px) {
+	.menu {
+		font-size: 13px;
+	}
+	.logo {
+		padding-left: 20px;
+	}
+}
+
+@media (max-width: 760px) {
+
+	#banner {
+		height: 900px;
+	}
+
+	.banner-headline h1 {
+		font-size: 55px;
+		padding: 20px;
+	}
+
+	.banner-headline h2 {
+		font-size: 17px;
+		padding: 20px;
+	}
+
+	.banner-options {
+		height: auto;
+		flex-direction: column;
+	}
+
+	.container {
+		flex-direction: column;
+	}
+
+	#geral section {
+		padding: 20px;
+	}
+
+	#geral aside {
+		padding: 20px;
+	}
+
+	.widget-body-1 {
+		float: left;
+	}
+
+	.widget-body-2 {
+		float: left;
+	}
+
+	.footer-menu {
+		flex-direction: column;
+	}
+
+	.footer-area {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.widget-text-endereco {
+		flex-direction: column;
+	}
+
+	.street {
+		margin-bottom: 10px;
+	}
+
+	.footer-copy {
+		padding-left: 20px;
+	}
+
+	header .container {
+		flex-direction: row;
+	}
+
+	nav ul {
+		flex-direction: column;
+		display: none;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		background-color: #FFF;
+	}
+
+	header {
+		height: auto;
+	}
+
+	.logo {
+		padding-left: 20px;
+	}
+
+	.menu-mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
 }
